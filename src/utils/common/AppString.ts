@@ -20,4 +20,8 @@ export let AppString = {
     user_login_failed: "User login failed",
     user_not_found: "User not found",
 
+    // cricket messages
+    cricket_live_score: "Cricket live scores",
+    fetched_successfully: "Fetched successfully",
+    no_data_found: "No data found",
 }

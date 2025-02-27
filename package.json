@@ -1,11 +1,13 @@
 {
   "name": "drizzle-postgres-express",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon src/server.ts",
     "drizzle:generate": "npx drizzle-kit generate",
-    "drizzle:migrate": "npx drizzle-kit migrate"
+    "drizzle:migrate": "npx drizzle-kit migrate",
+    "crick": "tsx src/scripts/crickbuzz.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,15 +16,18 @@
   "dependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "axios": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.40.0",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "ioredis": "^5.5.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.9",
     "pg": "^8.13.3",
+    "puppeteer": "^24.3.0",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {

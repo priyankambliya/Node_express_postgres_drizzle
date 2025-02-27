@@ -12,6 +12,9 @@ export const app: Express = express()
 process.on('uncaughtException', errorHandler.uncaughtExceptionHandler)
 process.on('unhandledRejection', errorHandler.unhandledRejectionHandler)
 
+app.set('view engine', 'ejs')
+app.set('views', 'views')
+
 app.use(cors(corsOptions))
 app.use(morgan('dev'))
 
