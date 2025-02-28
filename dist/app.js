@@ -19,6 +19,7 @@ exports.app.use((0, cors_1.default)(corsOptions_1.default));
 exports.app.use((0, morgan_1.default)('dev'));
 exports.app.use(express_1.default.json());
 exports.app.use(express_1.default.urlencoded({ extended: true }));
+exports.app.get('/', (req, res) => { res.send('Welcome to the app'); });
 exports.app.use('/api', routes_1.default);
 exports.app.use(errorHandler_1.default.unHandledRouteHandler);
 exports.app.use(errorHandler_1.default.errorHandler);
