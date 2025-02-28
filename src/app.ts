@@ -21,6 +21,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+app.get('/', (req, res) => { res.send('Welcome to the app') })
 app.use('/api', appRoutes)
 
 app.use(errorHandler.unHandledRouteHandler)
