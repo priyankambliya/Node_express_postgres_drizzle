@@ -4,9 +4,6 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "clean": "del /s /q dist",
-    "build": "npm run clean && tsc",
-    "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "drizzle:generate": "npx drizzle-kit generate",
     "drizzle:migrate": "npx drizzle-kit migrate",
